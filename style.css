@@ -12,11 +12,6 @@ button, a {
     cursor: pointer;
 }
 
-header {
-    width: 100%;
-    height: 10%;
-}
-
 .container {
     max-width: 900px;
     margin: 30px auto;
@@ -24,7 +19,7 @@ header {
 }
 
 .logo {
-    height: 90px;
+    height: 70px;
 }
 
 .navbar {
@@ -36,7 +31,7 @@ header {
 }
 
 .navbar h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 
@@ -54,7 +49,7 @@ header {
 .add.tarefa {
     display: flex;
     flex-direction: row;
-    margin: 50px auto;
+    margin: 45px auto;
     align-items: center;
     justify-content: center;
 }
@@ -62,7 +57,7 @@ header {
 .add.tarefa input {
     width: 50%;
     height: 40px;
-    font-size: 16px;
+    font-size: 15px;
     border: 1px solid rgb(174, 174, 174);
     border-radius: 10px;
     padding: 20px;

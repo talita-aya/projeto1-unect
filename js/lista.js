@@ -1,46 +1,25 @@
-const elementoLista = document.querySelector('ul')
-const elementoInput = document.querySelector('input')
-const elementoBotao = document.querySelector('button')
+function lista(){
+    const input = document.getElementById('input')
+    const valorInput = input.value 
+    input.value = ""
 
-const tarefas = []
-
-function mostraTarefas(){
-    elementoLista.innerHTML = ""
-    for(tarefa of tarefas){
-        const elementoTarefa = document.createElement('li')
-        const textoTarefa = document.createTextNode(tarefa)
-
-        const elementoLink = document.createElement('a')
-        const pos = tarefas.indexOf(tarefa)
-
-        const linkText = document.createElement('img')
-        linkText.setAttribute('src', 'img/delete.png')
-        elementoLink.appendChild(linkText)
-
-        elementoLink.setAttribute('href', '#')
-        elementoLink.setAttribute('onclick', `deletaTarefa(${pos})`)
-
-        elementoTarefa.appendChild(textoTarefa)
-        elementoLista.appendChild(elementoTarefa)
-        elementoTarefa.appendChild(elementoLink)
-    }
-}
-
-mostraTarefas()
+    const artigo = document.getElementById('tarefas')
 
 
-function addTarefa(){
-    const textoTarefa = elementoInput.value 
-    tarefas.push(textoTarefa)
-    elementoInput.value = ""
+    const div = document.createElement('div')
+    artigo.appendChild(div)
 
-    mostraTarefas()
-}
+    const p = document.createElement('p')
+    p.innerHTML = valorInput
+    div.appendChild(p)
 
-elementoBotao.setAttribute('onclick', 'addTarefa()')
+    //DELETE
+    const span = document.createElement('img')
+    span.setAttribute('src', 'img/delete.png')
+    div.appendChild(span)
 
+    span.addEventListener("click", () => { //apagar div
+        div.remove()
+    })
 
-function deletaTarefa(pos){
-    tarefas.splice(pos, 1)
-    mostraTarefas()
 }

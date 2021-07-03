@@ -132,21 +132,24 @@ button, a {
     margin-right: -630px;
 }
 
-.tarefas {
+#tarefas {
     margin: 1rem;
     font-size: 15px;
     color: black;
     font-weight: normal;
 }
 
-.tarefas li {
+#tarefas div {
     text-align: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(116, 116, 116, 0.268);
     margin-bottom: 10px;
-    
+}
+
+#tarefas img {
+    cursor: pointer;
 }
 
 .underline2 {

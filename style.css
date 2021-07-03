@@ -76,12 +76,13 @@ button, a {
     font-style: italic;
 }
 
-.tarefas {
+.task {
     width: 100%;
     height: 100%;
     text-align: center;
     margin-top: 4rem;
     color: rgb(53, 53, 53);
+    position: relative;
 }
 
 .to.do {
@@ -89,24 +90,15 @@ button, a {
     display: inline-block;
     width: 30%;
     height: 50vh;
-    margin-right: 41px;
     border-radius: 10px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
     box-shadow: 3px 3px 3px rgb(167, 167, 167);
     font-size: 20px;
     font-weight: bolder;
+    position: absolute;
+    left: 0;
 }
-
-/*
-.to.do li {
-    font-size: 15px;
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 6px;
-    font-weight: normal;
-}
-*/
 
 .doing {
     background: rgba(255, 255, 255, 0.658);
@@ -120,40 +112,42 @@ button, a {
     box-shadow: 3px 3px 3px rgb(167, 167, 167);
     font-size: 20px;
     font-weight: bolder;
-}
+    position: absolute;
+    left: 315px;
 
-/*
-.doing li {
-    font-size: 15px;
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 6px;
-    font-weight: normal;
 }
-*/
 
 .done {
     background: rgba(255, 255, 255, 0.658);
     display: inline-block;
     width: 30%;
     height: 50vh;
+    margin-right: 41px;
     border-radius: 10px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
     box-shadow: 3px 3px 3px rgb(167, 167, 167);
     font-size: 20px;
     font-weight: bolder;
+    margin-right: -630px;
 }
 
-/*
-.done li {
+.tarefas {
+    margin: 1rem;
     font-size: 15px;
-    text-align: left;
-    padding-left: 2rem;
-    padding-top: 6px;
+    color: black;
     font-weight: normal;
 }
-*/
+
+.tarefas li {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(116, 116, 116, 0.268);
+    margin-bottom: 10px;
+    
+}
 
 .underline2 {
     margin: 5px auto;
@@ -169,30 +163,6 @@ button, a {
     background-color: rgb(138, 131, 131);
 }
 
-/*
-UNDERLINE DA TAREFA ADICIONADA - TALVEZ NÃO NECESSÁRIO
-.underline3 {
-    margin: 10px auto;
-    height: 1px;
-    width: 80%;
-    background-color: rgb(197, 197, 197);
-}
-*/
-
-/*
-QUANDO PASSA O MOUSE POR CIMA DA TAREFA ADICIONADA
-.task:hover {
-    background-color: rgba(192, 192, 192, 0.296);
-    border-radius: 10px;
-    background-image: url(img/delete.png);
-    background-repeat: no-repeat;
-    background-size: 23px;
-    background-position-x: 200px;
-    background-position-y: center;
-}
-*/
-
-/* MODAL */
 .modal-container {
     width: 100%;
     height: 100%;

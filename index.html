@@ -10,6 +10,7 @@
     <title>Projeto #1</title>
 </head>
 <body>
+    <!-- PARTE SUPERIOR -->
     <header>
         <div class="container">
             <div class="navbar">
@@ -28,66 +29,50 @@
                     <i class="fas fa-cog fa-2x" onClick="iniciaModal()"></i>
                 </div>
             </div>
-            
-            <!-- INPUT PARA ADD TAREFA -->
-            <div class="add tarefa">
-                <input type="text" name="tarefa" id="tarefa" placeholder="Adicionar tarefa...">
-                
-                <!-- ÍCONE ADD -->
-                <div class="add" id="add">
-                    <i class="fas fa-plus-square fa-2x"></i>
-                </div>
-            </div>
-
-        </div>
     </header>
 
-    <!-- DIVISÃO DE TAREFAS -->
-    <div class="tarefas">
-        <div class="container">
+    
+    <!-- PARTE DAS TAREFAS -->
+    <div class="container">
+        <div class="add tarefa">
+            <!-- INPUT PARA ADD TAREFA -->
+            <input type="text" name="input" id="input" placeholder="Adicionar tarefa...">
+                   
+            <!-- ÍCONE ADD -->
+            <button>
+                <i class="fas fa-plus-square fa-3x"></i>
+            </button>
+        </div>
 
+        <!-- DIVISÃO DE TAREFAS -->
+        <div class="task">
+            <!-- TO DO -->
             <div class="to do">
                 <p>to do</p>
                 <div class="underline2"></div>
-                <!--
-                    <div class="task">
-                    <ul>
-                        <li>fazer compras</li>
-                        <div class="underline3"></div>
-                    </ul>
+                <!-- LISTA -->
+                <div class="tarefas">
+                    <ul></ul>
                 </div>
-                -->
             </div>
 
+            <!-- DOING -->
             <div class="doing">
                 <p>doing</p>
                 <div class="underline2"></div>
-               <!--
-                    <div class="task">
-                    <ul>
-                        <li>fazer compras</li>
-                        <div class="underline3"></div>
-                    </ul>
-                </div>
-               -->
             </div>
 
+            <!-- DONE -->
             <div class="done">
                 <p>done</p>
                 <div class="underline2"></div>
-                <!--
-                    <div class="task">
-                    <ul>
-                        <li>fazer compras</li>
-                        <div class="underline3"></div>
-                    </ul>
-                </div>
-                -->
             </div>
 
         </div>
+        
     </div>
 
+    <!-- MODAL -->
     <section id="modal-container" class="modal-container" onClick="fechaModal()">
         <div id="content">
             <h3>Configurações</h3>
@@ -97,5 +82,6 @@
     </section>
     
     <script src="js/modal.js"></script>
+    <script src="js/lista.js"></script>
 </body>
 </html>

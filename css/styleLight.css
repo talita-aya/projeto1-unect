@@ -112,6 +112,10 @@ body {
     font-weight: bolder;
     position: absolute;
     left: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 .doing {
@@ -128,7 +132,10 @@ body {
     font-weight: bolder;
     position: absolute;
     left: 315px;
-
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 .done {
@@ -144,6 +151,10 @@ body {
     font-size: 20px;
     font-weight: bolder;
     margin-right: -630px;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 #tarefas {

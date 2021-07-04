@@ -37,6 +37,9 @@ function lista(){
         const span4 = document.createElement('img')
         span4.setAttribute('src','img/restore.png')
 
+
+        
+
         span.addEventListener("click", () => { //apagar div
             div.remove()
         })

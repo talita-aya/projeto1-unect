@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5afb4dfbd4.js" crossorigin="anonymous"></script>
     
@@ -83,11 +84,34 @@
         <div id="content">
             <h3>Configurações</h3>
             <div class="underline3"></div>
+
+            <!-- DARK MODE/ LIGHT MODE -->
+            <div class="theme">
+                <p>Dark mode</p><input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+            </div>
+            
+            <!-- WALLPAPER -->
+            <div class="wallpaper">
+                <p>Plano de fundo</p>
+                <input type="url" name="linkWallpaper" id="linkWallpaper" placeholder="Coloque aqui o link da imagem">
+            </div>
+            
+            <!-- BOTÕES MODAL -->
+            <div class="modalBotao">
+                <input type="button" value="Limpar" id="limpar" onClick="limpar()">
+                <input type="button" value="Aplicar" id="aplicar" onClick="aplicar()">
+            </div>
             
         </div>
     </section>
     
     <script src="js/modal.js"></script>
     <script src="js/lista.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

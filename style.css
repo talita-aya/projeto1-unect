@@ -215,17 +215,16 @@ button, a {
     left: 0;
     z-index: 1;
     display: none;
-    
 }
 
 .modal-container #content {
     background-color: white;
-    width: 50vh;
+    width: 80vh;
     padding: 40px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.426);
     border-radius: 10px;
     position: relative;
-    margin: 40vh auto;
+    margin: 20vh auto;
     z-index: 3;
 }
 
@@ -233,4 +232,108 @@ button, a {
     text-align: center;
     font-size: 22px;
 }
+
+.theme {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.label {
+    width: 57px;
+    height: 28px;
+    background-color: #111;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
+.fa-moon {
+    color: #f1c40f; 
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.ball {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+}
+
+#checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+#checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+body {
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background-color: black;
+}
+
+.wallpaper {
+    align-items: left;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.wallpaper input {
+    outline: none;
+    margin-top: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    font-size: 16px;
+    color: rgb(111, 111, 111);
+}
+
+.wallpaper input::placeholder{
+    font-style: italic;
+}
+
+.modalBotao {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.modalBotao input {
+    cursor: pointer;
+    font-size: 19px;
+    border: 1px solid rgb(68, 49, 172);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(68, 49, 172);
+}
+
+.modalBotao input:last-child {
+    background-color: rgb(68, 49, 172);
+    color: white;
+}
+
+
+
 

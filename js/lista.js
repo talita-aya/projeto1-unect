@@ -26,7 +26,7 @@ function lista(){
 
         //NEXT
         const span2 = document.createElement('img')
-        span2.setAttribute('src', 'img/next.png') 
+        span2.setAttribute('src', 'img/next.png')
         div.appendChild(span2)
 
         //DONE

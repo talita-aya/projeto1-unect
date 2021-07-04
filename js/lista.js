@@ -38,8 +38,6 @@ function lista(){
         span4.setAttribute('src','img/restore.png')
 
 
-        
-
         span.addEventListener("click", () => { //apagar div
             div.remove()
         })

@@ -158,23 +158,32 @@ body {
 }
 
 #tarefas {
-    margin: 1rem;
+    margin: 1rem auto;
     font-size: 15px;
     color: rgb(58, 58, 58);
     font-weight: 580;
 }
 
 #tarefas div {
-    text-align: left;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(116, 116, 116, 0.268);
+    margin: 0 15px;
     margin-bottom: 10px;
+}
+
+#tarefas p {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #tarefas img {
     cursor: pointer;
+    margin-right: -100px;
+    margin-left: 30px;
 }
 
 #tarefas2 {
@@ -185,16 +194,24 @@ body {
 }
 
 #tarefas2 div {
-    text-align: left;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(116, 116, 116, 0.268);
     margin-bottom: 10px;
 }
 
+#tarefas2 p {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #tarefas2 img {
     cursor: pointer;
+    margin-right: -100px;
+    margin-left: 30px;
 }
 
 #tarefas3 {
@@ -205,16 +222,24 @@ body {
 }
 
 #tarefas3 div {
-    text-align: left;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(116, 116, 116, 0.268);
     margin-bottom: 10px;
 }
 
+#tarefas3 p {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #tarefas3 img {
     cursor: pointer;
+    margin-right: -100px;
+    margin-left: 30px;
 }
 
 .underline2 {
@@ -352,6 +377,3 @@ body {
     background-color: #3071D9;
     color: white;
 }
-
-
-

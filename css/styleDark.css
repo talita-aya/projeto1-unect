@@ -1,8 +1,14 @@
+.dark button, a {
+    padding: 2.5px 3px 0 3px;
+    background: rgba(177, 177, 177, 0.755);
+    cursor: pointer;
+}
+
 body.dark {
     width: 100%;
     height: 95.4vh;
     transition: background 0.2s linear;
-    background: linear-gradient(45deg,#1e3150, #121212);
+    background: linear-gradient(45deg,#172538, #121212);
     background-repeat: no-repeat;
 }
 
@@ -25,13 +31,139 @@ body.dark {
     width: 50%;
     height: 30px;
     font-size: 15px;
-    border: 1px solid rgb(174, 174, 174);
+    border: 1px solid rgb(146, 146, 146);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 2px 2px 5px rgba(79, 78, 78, 0.631);
     margin: auto 30px;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.775);
+    background-color: rgba(95, 95, 95, 0.775);
+    color: rgb(223, 222, 222);
+}
+
+.dark .add.tarefa input::placeholder {
+    font-style: italic;
+    color: rgb(196, 192, 192);
+}
+
+.dark .task {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    color: rgb(211, 211, 211);
+    position: relative;
+}
+
+.dark .to.do {
+    background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
+}
+
+.dark .doing {
+    background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    margin-right: 41px;
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 315px;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
+}
+
+.dark .done {
+    background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    margin-right: 41px;
+    border-radius: 10px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: -630px;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
+}
+
+.dark .underline2 {
+    margin: 5px auto;
+    height: 2px;
+    width: 80%;
+    background-color: rgb(211, 211, 211);
+}
+
+.dark #tarefas {
+    margin: 1rem auto;
+    font-size: 15px;
+    color: rgb(211, 211, 211);
+    font-weight: 580;
+}
+
+.dark #tarefas div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin: 0 15px;
+    margin-bottom: 10px;
+}
+
+.dark #tarefas2 {
+    margin: 1rem;
+    font-size: 15px;
+    color: rgb(211, 211, 211);
+    font-weight: normal;
+}
+
+.dark #tarefas2 div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin-bottom: 10px;
+}
+
+.dark #tarefas3 {
+    margin: 1rem;
+    font-size: 15px;
+    color: rgb(211, 211, 211);
+    font-weight: normal;
+}
+
+.dark #tarefas3 div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin-bottom: 10px;
 }
 
 .dark .modal-container #content {

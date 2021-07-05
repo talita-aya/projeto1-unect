@@ -60,10 +60,10 @@ body.dark {
     display: inline-block;
     width: 30%;
     height: 50vh;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
-    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    box-shadow: 3px 3px 3px rgb(48, 47, 47);
     font-size: 20px;
     font-weight: bolder;
     position: absolute;
@@ -74,16 +74,27 @@ body.dark {
     word-break:break-all;
 }
 
+.dark .to.do::-webkit-scrollbar-track {
+    background: rgba(118, 117, 117, 0.741);
+    border-radius: 20px;
+}
+
+.dark .to.do::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
+    border: 2px solid rgba(118, 117, 117, 0.741);
+}
+
 .dark .doing {
     background: rgba(118, 117, 117, 0.741);
     display: inline-block;
     width: 30%;
     height: 50vh;
     margin-right: 41px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
-    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    box-shadow: 3px 3px 3px rgb(48, 47, 47);
     font-size: 20px;
     font-weight: bolder;
     position: absolute;
@@ -94,16 +105,27 @@ body.dark {
     word-break:break-all;
 }
 
+.dark .doing::-webkit-scrollbar-track {
+    background: rgba(118, 117, 117, 0.741);
+    border-radius: 10px;
+}
+
+.dark .doing::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
+    border: 2px solid rgba(118, 117, 117, 0.741);
+}
+
 .dark .done {
     background: rgba(118, 117, 117, 0.741);
     display: inline-block;
     width: 30%;
     height: 50vh;
     margin-right: 41px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
-    box-shadow: 3px 3px 3px rgb(79, 79, 79);
+    box-shadow: 3px 3px 3px rgb(48, 47, 47);
     font-size: 20px;
     font-weight: bolder;
     margin-right: -630px;
@@ -111,6 +133,17 @@ body.dark {
     overflow-y: auto;
     max-width: 30%;
     word-break:break-all;
+}
+
+.dark .done::-webkit-scrollbar-track {
+    background: rgba(118, 117, 117, 0.741);
+    border-radius: 10px;
+}
+
+.dark .done::-webkit-scrollbar-thumb {
+    background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
+    border: 2px solid rgba(118, 117, 117, 0.741);
 }
 
 .dark .underline2 {

@@ -104,7 +104,7 @@ body {
     display: inline-block;
     width: 30%;
     height: 50vh;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
     box-shadow: 3px 3px 3px rgb(79, 79, 79);
@@ -118,13 +118,28 @@ body {
     word-break:break-all;
 }
 
+.to.do::-webkit-scrollbar {
+    width: 10px;
+}
+
+.to.do::-webkit-scrollbar-track {
+    background: rgba(231, 230, 230, 0.967);
+    border-radius: 10px;
+}
+
+.to.do::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.782);
+    border-radius: 20px;
+    border: 2px solid rgba(212, 212, 212, 0.796);
+}
+
 .doing {
     background: rgba(255, 255, 255, 0.796);
     display: inline-block;
     width: 30%;
     height: 50vh;
     margin-right: 41px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
     box-shadow: 3px 3px 3px rgb(79, 79, 79);
@@ -138,13 +153,28 @@ body {
     word-break:break-all;
 }
 
+.doing::-webkit-scrollbar {
+    width: 10px;
+}
+
+.doing::-webkit-scrollbar-track {
+    background: rgba(231, 230, 230, 0.967);
+    border-radius: 10px;
+}
+
+.doing::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.782);
+    border-radius: 20px;
+    border: 2px solid rgba(212, 212, 212, 0.796);
+}
+
 .done {
     background: rgba(255, 255, 255, 0.796);
     display: inline-block;
     width: 30%;
     height: 50vh;
     margin-right: 41px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: 1px solid rgb(174, 174, 174);
     padding: 1rem;
     box-shadow: 3px 3px 3px rgb(79, 79, 79);
@@ -155,6 +185,21 @@ body {
     overflow-y: auto;
     max-width: 30%;
     word-break:break-all;
+}
+
+.done::-webkit-scrollbar {
+    width: 10px;
+}
+
+.done::-webkit-scrollbar-track {
+    background: rgba(231, 230, 230, 0.967);
+    border-radius: 10px;
+}
+
+.done::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.782);
+    border-radius: 20px;
+    border: 2px solid rgba(212, 212, 212, 0.796);
 }
 
 #tarefas {
@@ -241,6 +286,7 @@ body {
     margin-right: -100px;
     margin-left: 30px;
 }
+
 
 .underline2 {
     margin: 5px auto;

@@ -11,3 +11,9 @@ function fechaModal(){
         }
     }
 }
+
+const checkbox = document.getElementById('checkbox')
+checkbox.addEventListener('change', () => {
+    //mudar tema
+    document.body.classList.toggle('dark')
+})

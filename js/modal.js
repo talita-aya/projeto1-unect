@@ -12,8 +12,34 @@ function fechaModal(){
     }
 }
 
-const checkbox = document.getElementById('checkbox')
-checkbox.addEventListener('change', () => {
-    //mudar tema
-    document.body.classList.toggle('dark')
+// DARK E LIGHT MODE
+var checkbox = document.getElementById('checkbox')
+if(localStorage.getItem("mode") == "dark"){
+    darkmode()
+}else{
+    nodark()
+}
+
+checkbox.addEventListener('change', function(){
+    if(checkbox.checked){
+        darkmode()
+    }else{
+        nodark()
+    }
 })
+
+function darkmode(){
+    document.body.classList.toggle("dark")
+    checkbox.checked = true
+    localStorage.setItem("mode", "dark")
+}
+
+function nodark(){
+    document.body.classList.remove("dark")
+    checkbox.checked = false
+    localStorage.setItem("mode", "light")
+}
+
+
+
+

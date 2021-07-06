@@ -254,6 +254,7 @@ body.dark {
     border-bottom: 1px solid rgb(99, 99, 99);
     font-size: 16px;
     color: rgb(218, 218, 218);
+    filter: hue-rotate(1deg);
 }
 
 .dark .modalBotao input {
@@ -269,4 +270,12 @@ body.dark {
 .dark .modalBotao input:last-child {
     background-color: #1e3150;
     color: white;
+}
+
+.dark .modalBotao input:hover:first-child {
+    background-color: rgb(221, 225, 235);
+}
+
+.dark .modalBotao input:hover:last-child {
+    background-color: #192942;
 }

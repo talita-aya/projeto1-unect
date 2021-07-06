@@ -5,14 +5,21 @@ function iniciaModal(){
 
 function fechaModal(){
     const modal = document.getElementById('modal-container')
-    window.onclick = (evento) => { //arow function vai ser chamada sempre que clicar na tela
-        if(evento.target == modal){ //target = só se clicar naquela parte, no caso na parte escura do modal, background
+    window.onclick = (evento) => { 
+        if(evento.target == modal){ 
             modal.style.display = "none"
         }
     }
 }
 
+
 // DARK E LIGHT MODE
+
+/* 
+gente desculpa, eu tentei usar cookies só que não tava indo, 
+ai eu fui pesquisar se tinha algum outro jeito de salvar e
+encontrei o local storage...
+*/ 
 var checkbox = document.getElementById('checkbox')
 if(localStorage.getItem("mode") == "dark"){
     darkmode()

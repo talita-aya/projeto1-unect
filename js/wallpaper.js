@@ -16,7 +16,7 @@ function limpar(){
 function aplicar(){
     var link = document.getElementById("linkWallpaper").value
     if(link.length == 0){
-        document.body.style.background = null
+        alert("Nenhum link foi adicionado, tente novamente") //caso nenhum link seja adicionado
     }else{
         document.body.style.background = "url("+link+") no-repeat"
         document.body.style.backgroundSize = "cover"

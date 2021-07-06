@@ -288,6 +288,30 @@ body {
 }
 
 
+#tarefas img {
+    visibility: hidden;
+}
+
+#tarefas div:hover img{
+    visibility: visible;
+}
+
+#tarefas2 img {
+    visibility: hidden;
+}
+
+#tarefas2 div:hover img{
+    visibility: visible;
+}
+
+#tarefas3 img {
+    visibility: hidden;
+}
+
+#tarefas3 div:hover img{
+    visibility: visible;
+}
+
 .underline2 {
     margin: 5px auto;
     height: 2px;

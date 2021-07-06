@@ -365,7 +365,7 @@ body {
 .label {
     width: 57px;
     height: 28px;
-    background-color: rgba(0, 0, 0, 0.871);
+    background-color: rgba(99, 99, 99, 0.871);
     display: flex;
     border-radius: 50px;
     align-items: center;
@@ -450,7 +450,7 @@ body {
 }
 
 .modalBotao input:hover:first-child {
-    background-color: rgba(203, 217, 252, 0.426);
+    background-color: rgb(236, 240, 248);
 }
 
 .modalBotao input:hover:last-child {

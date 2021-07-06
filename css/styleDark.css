@@ -226,6 +226,18 @@ body.dark {
     color: rgb(218, 218, 218);
 }
 
+.dark .label {
+    width: 57px;
+    height: 28px;
+    background-color: rgba(26, 26, 28, 0.645);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+}
+
 .dark .ball {
     width: 24px;
     height: 23px;
@@ -260,20 +272,21 @@ body.dark {
 .dark .modalBotao input {
     cursor: pointer;
     font-size: 19px;
-    border: 1px solid #1e3150;
+    border: 1px solid #353535;
     padding: 10px;
     border-radius: 10px;
-    color: #1e3150;
-    background-color: white;
+    color: white;
+    background-color: #353535;
 }
 
 .dark .modalBotao input:last-child {
     background-color: #1e3150;
     color: white;
+    border: 1px solid #192942;
 }
 
 .dark .modalBotao input:hover:first-child {
-    background-color: rgb(221, 225, 235);
+    background-color: #313131;
 }
 
 .dark .modalBotao input:hover:last-child {

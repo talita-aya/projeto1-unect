@@ -5,8 +5,9 @@ function iniciaModal(){
 
 function fechaModal(){
     const modal = document.getElementById('modal-container')
+    const botaoAplicar = document.getElementById('aplicar')
     window.onclick = (evento) => { 
-        if(evento.target == modal){ 
+        if((evento.target == modal) || (evento.target == botaoAplicar)){ 
             modal.style.display = "none"
         }
     }

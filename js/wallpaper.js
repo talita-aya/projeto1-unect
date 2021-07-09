@@ -25,6 +25,7 @@ function limpar(){
 
     document.cookie = `fundo=${document.body.style.background}; expires=${data.toUTCString()}`
     alert('Pressione "Aplicar" se realmente deseja retirar o plano de fundo')
+
     refresh2()
 }
 
@@ -45,8 +46,8 @@ function aplicar(){
     var link = document.getElementById("linkWallpaper").value
 
     let data = new Date()
-    let minutos = 1
-    data.setTime(data.getTime() + (minutos*1000*60))
+    let ano = 3000
+    data.setTime(data.getTime() + (ano*365*24*60*60*1000))
 
     document.cookie = `link=${link}; expires=${data.toUTCString()}`
 

@@ -1,141 +1,287 @@
 .dark button, a {
+    padding: 2.5px 3px 0 3px;
     background: rgba(177, 177, 177, 0.755);
+    cursor: pointer;
 }
 
-.dark body {
+body.dark {
+    width: 100%;
+    height: 95.4vh;
+    transition: background 0.2s linear;
     background: linear-gradient(45deg,#172538, #121212);
+    background-repeat: no-repeat;
 }
 
 .dark .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     color: #ffffffea;
 }
 
 .dark .underline {
+    margin: auto;
+    height: 2px;
+    width: 80%;
     background-color: #ffffffea;
 }
 
 .dark .add.tarefa input {
+    width: 50%;
+    height: 30px;
+    font-size: 15px;
     border: 1px solid rgb(146, 146, 146);
+    border-radius: 20px;
+    padding: 20px;
     box-shadow: 2px 2px 5px rgba(79, 78, 78, 0.631);
+    margin: auto 30px;
+    outline: none;
     background-color: rgba(95, 95, 95, 0.775);
     color: rgb(223, 222, 222);
 }
 
 .dark .add.tarefa input::placeholder {
+    font-style: italic;
     color: rgb(196, 192, 192);
 }
 
 .dark .task {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 4rem;
     color: rgb(211, 211, 211);
+    position: relative;
 }
 
 .dark .to.do {
     background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    border-radius: 7px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
     box-shadow: 3px 3px 3px rgb(48, 47, 47);
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 .dark .to.do::-webkit-scrollbar-track {
     background: rgba(118, 117, 117, 0.741);
+    border-radius: 20px;
 }
 
 .dark .to.do::-webkit-scrollbar-thumb {
     background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
     border: 2px solid rgba(118, 117, 117, 0.741);
 }
 
 .dark .doing {
     background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    margin-right: 41px;
+    border-radius: 7px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
     box-shadow: 3px 3px 3px rgb(48, 47, 47);
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    left: 315px;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 .dark .doing::-webkit-scrollbar-track {
     background: rgba(118, 117, 117, 0.741);
+    border-radius: 10px;
 }
 
 .dark .doing::-webkit-scrollbar-thumb {
     background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
     border: 2px solid rgba(118, 117, 117, 0.741);
 }
 
 .dark .done {
     background: rgba(118, 117, 117, 0.741);
+    display: inline-block;
+    width: 30%;
+    height: 50vh;
+    margin-right: 41px;
+    border-radius: 7px;
+    border: 1px solid rgb(174, 174, 174);
+    padding: 1rem;
     box-shadow: 3px 3px 3px rgb(48, 47, 47);
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: -630px;
+    max-height: 500px;
+    overflow-y: auto;
+    max-width: 30%;
+    word-break:break-all;
 }
 
 .dark .done::-webkit-scrollbar-track {
     background: rgba(118, 117, 117, 0.741);
+    border-radius: 10px;
 }
 
 .dark .done::-webkit-scrollbar-thumb {
     background-color: rgba(39, 44, 59, 0.611);
+    border-radius: 20px;
     border: 2px solid rgba(118, 117, 117, 0.741);
 }
 
 .dark .underline2 {
+    margin: 5px auto;
+    height: 2px;
+    width: 80%;
     background-color: rgb(211, 211, 211);
 }
 
 .dark #tarefas {
+    margin: 1rem auto;
+    font-size: 15px;
     color: rgb(211, 211, 211);
+    font-weight: 580;
 }
 
 .dark #tarefas div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin: 0 15px;
+    margin-bottom: 10px;
 }
 
 .dark #tarefas2 {
+    margin: 1rem;
+    font-size: 15px;
     color: rgb(211, 211, 211);
+    font-weight: normal;
 }
 
 .dark #tarefas2 div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin-bottom: 10px;
 }
 
 .dark #tarefas3 {
+    margin: 1rem;
+    font-size: 15px;
     color: rgb(211, 211, 211);
+    font-weight: normal;
 }
 
 .dark #tarefas3 div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     border-bottom: 1px solid rgba(211, 211, 211, 0.713);
+    margin-bottom: 10px;
 }
 
 .dark .modal-container #content {
     background-color: #22242e;
+    width: 80vh;
+    padding: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.426);
+    border-radius: 10px;
+    position: relative;
+    margin: 20vh auto;
+    z-index: 3;
 }
 
 .dark #content h3 {
     color: rgb(218, 218, 218);
+    text-align: center;
+    font-size: 25px;
 }
 
 .dark .theme {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    font-size: 20px;
     color: rgb(218, 218, 218);
 }
 
 .dark .label {
+    width: 57px;
+    height: 28px;
     background-color: rgba(26, 26, 28, 0.645);
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
 }
 
 .dark .ball {
+    width: 24px;
+    height: 23px;
     background-color: #353535;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
 }
 
 .dark .wallpaper {
+    align-items: left;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 20px;
     color: rgb(218, 218, 218);
 }
 
 .dark .wallpaper input {
+    outline: none;
+    margin-top: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    font-size: 16px;
     color: rgb(218, 218, 218);
     filter: hue-rotate(1deg);
 }
 
 .dark .modalBotao input {
+    cursor: pointer;
+    font-size: 19px;
     border: 1px solid #353535;
+    padding: 10px;
+    border-radius: 10px;
     color: white;
     background-color: #353535;
 }
 
 .dark .modalBotao input:last-child {
     background-color: #1e3150;
+    color: white;
     border: 1px solid #192942;
 }
 
@@ -145,4 +291,32 @@
 
 .dark .modalBotao input:hover:last-child {
     background-color: #192942;
+}
+
+.dark .wrapper {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background-color: #10161f;
+    max-width: 365px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+}
+
+.dark .conteudo p {
+    color: rgb(196, 194, 194);
+    margin: 5px 0 20px 0;
+}
+
+.conteudo button {
+    padding: 10px 20px;
+    background-color: rgb(82, 82, 95);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }

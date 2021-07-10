@@ -3,7 +3,7 @@ window.onload = carregar
 const botao = document.getElementById('item')
 botao.addEventListener('click', 'item()')
 
-function item(){
+function aceitar(){
     let data = new Date()
     let ano = 3000
     data.setTime(data.getTime() + (ano*365*24*60*60*1000))

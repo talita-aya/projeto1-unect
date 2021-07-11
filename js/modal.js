@@ -1,3 +1,4 @@
+// ABRIR E FECHAR O MODAL
 function iniciaModal(){
     const modal = document.getElementById('modal-container')
     modal.style.display = "block"
@@ -15,9 +16,8 @@ function fechaModal(){
 
 
 // DARK E LIGHT MODE
-
 /* 
-gente desculpa, eu tentei usar cookies só que não tava indo, 
+eu tentei usar cookies só que não tava indo, 
 ai eu fui pesquisar se tinha algum outro jeito de salvar e
 encontrei o local storage...
 */ 

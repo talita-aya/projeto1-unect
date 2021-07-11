@@ -1,5 +1,6 @@
 // MUDANÇA DO PLANO DE FUNDO
 
+// TODA VEZ QUE A PÁGINA É CARREGADA
 window.onload = function(){
     url = document.cookie.split('; ').find(elemento => elemento.startsWith('link='))
     if(url == 'link='){
@@ -15,6 +16,8 @@ const aplique = document.getElementById('aplicar')
 limpe.addEventListener('click', 'limpar()')
 aplique.addEventListener("click", 'aplicar()')
 
+
+// REMOVER PLANO DE FUNDO ATUAL
 function limpar(){
     var fundo = document.body.style.background
     document.body.style.background = null
@@ -29,6 +32,7 @@ function limpar(){
     refresh2()
 }
 
+// REFRESH DEPOIS DE REMOVER O PLANO DE FUNDO
 function refresh2(){
     let wallp
     try {
@@ -42,6 +46,7 @@ function refresh2(){
 }
 
 
+// APLICAR A IMAGEM ESCOLHIDA COMO PLANO DE FUNDO
 function aplicar(){
     var link = document.getElementById("linkWallpaper").value
 
@@ -54,6 +59,8 @@ function aplicar(){
     refresh()
 }
 
+
+// REFRESH COM A IMAGEM ESCOLHIDA
 function refresh(){
     let url
     try {

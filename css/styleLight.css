@@ -28,6 +28,7 @@ body {
     margin: 30px auto;
 }
 
+/* PARTE SUPERIOR: LOGO + NOME + BOTÃO MODAL */
 .logo {
     height: 70px;
 }
@@ -60,6 +61,7 @@ body {
     cursor: pointer;
 }
 
+/* ADICIONAR TAREFAS */
 .add.tarefa {
     display: flex;
     flex-direction: row;
@@ -90,6 +92,7 @@ body {
     height: 30px;
 }
 
+/* LISTA DE TAREFAS */
 .task {
     width: 100%;
     height: 100%;
@@ -99,6 +102,7 @@ body {
     position: relative;
 }
 
+/* BLOCO TO DO */
 .to.do {
     background: rgba(255, 255, 255, 0.796);
     display: inline-block;
@@ -118,6 +122,7 @@ body {
     word-break:break-all;
 }
 
+/* SCROLL DAS LISTAS - não "vazar" texto pra fora do bloco */
 .to.do::-webkit-scrollbar {
     width: 10px;
 }
@@ -133,6 +138,7 @@ body {
     border: 2px solid rgba(212, 212, 212, 0.796);
 }
 
+/* BLOCO DOING */
 .doing {
     background: rgba(255, 255, 255, 0.796);
     display: inline-block;
@@ -168,6 +174,7 @@ body {
     border: 2px solid rgba(212, 212, 212, 0.796);
 }
 
+/* BLOCO DONE */
 .done {
     background: rgba(255, 255, 255, 0.796);
     display: inline-block;
@@ -209,6 +216,7 @@ body {
     background-color: rgb(158, 158, 158);
 }
 
+/* CADA ITEM DA LISTA */
 #tarefas {
     margin: 1rem auto;
     font-size: 15px;
@@ -294,7 +302,8 @@ body {
     margin-left: 30px;
 }
 
-
+/* APARECER OPÇÕES PARA APAGAR, MOVER, RESTAURAR 
+SOMENTE SE O MOUSE PASSAR POR CIMA DA TAREFA */
 #tarefas img {
     visibility: hidden;
 }
@@ -326,6 +335,7 @@ body {
     background-color: rgb(138, 131, 131);
 }
 
+/* MODAL */
 .modal-container {
     width: 100%;
     height: 100%;
@@ -353,6 +363,7 @@ body {
     font-size: 25px;
 }
 
+/* MUDAR DE TEMA: DARK/LIGHT MODE */
 .theme {
     align-items: center;
     justify-content: space-between;
@@ -402,6 +413,7 @@ body {
     transform: translateX(24px);
 }
 
+/* MUDANÇA DE WALLPAPER */
 .wallpaper {
     align-items: left;
     justify-content: space-between;
@@ -426,6 +438,7 @@ body {
     font-style: italic;
 }
 
+/* BOTÕES DE LIMPAR E APLICAR DO MODAL */
 .modalBotao {
     align-items: center;
     justify-content: space-between;
@@ -457,10 +470,12 @@ body {
     background-color: rgb(38, 93, 182)
 }
 
+/* TAREFAS DO BLOCO DONE COMO CONCLUÍDAS */
 #tarefas3 {
     text-decoration: line-through;
 }
 
+/* POPUP DOS COOKIES */
 .cookie-container {
     text-align: center;
     max-width: 450px;

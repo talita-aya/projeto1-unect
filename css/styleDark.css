@@ -1,3 +1,9 @@
+/* 
+    CONFIGURAÇÕES DO DARK MODE
+    diferenças com o light mode:
+        - somente mudança de cores
+*/
+
 .dark button, a {
     padding: 2.5px 3px 0 3px;
     background: rgba(177, 177, 177, 0.755);

@@ -293,30 +293,36 @@ body.dark {
     background-color: #192942;
 }
 
-.dark .wrapper {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    background-color: #10161f;
-    max-width: 365px;
-    border-radius: 15px;
+.dark .cookie-container {
     text-align: center;
-    padding: 30px;
+    max-width: 450px;
+    height: 250px;
+    top: 330px;
+    left: 50px;
+    bottom: 20px;
+    padding: 20px;
+    background: rgb(1, 3, 24);
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 5px 5px 15px rgb(9, 6, 36);
 }
 
-.dark .conteudo p {
-    color: rgb(196, 194, 194);
-    margin: 5px 0 20px 0;
+.dark .cookie-container.active {
+    display: block;
 }
 
-.conteudo button {
-    padding: 10px 20px;
-    background-color: rgb(82, 82, 95);
-    border: none;
-    outline: none;
-    font-size: 16px;
-    font-weight: 500;
+.dark .cookie-content p {
+    margin-top: 10px;
+    color: white;
+}
+
+.dark .aceitar {
     color: white;
     cursor: pointer;
-    border-radius: 5px;
+    padding: 10px 16px;
+    background: rgb(26, 30, 43);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 30px;
 }

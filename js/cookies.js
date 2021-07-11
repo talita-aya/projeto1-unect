@@ -1,27 +1,14 @@
-window.onload = carregar
+const cookieContainer = document.querySelector(".cookie-container")
+const cookieButton = document.getElementById("aceitar")
 
-const botao = document.getElementById('item')
-botao.addEventListener('click', 'item()')
+cookieButton.addEventListener('click', () => {
+    cookieContainer.classList.remove("active")
+    localStorage.setItem("cookiesAccepted", "true")
+})
 
-function aceitar(){
-    let data = new Date()
-    let ano = 3000
-    data.setTime(data.getTime() + (ano*365*24*60*60*1000))
-
-    document.cookie = `cookie=cookiesAtivado; expires=${data.toUTCString()}`
-
-    carregar()
-}
-
-function carregar(){
-    let cookie
-    try {
-        cookie = document.cookie.split('; ').find(elemento => elemento.startsWith('cookie=')).split('=')[1]
-    } catch{}
-    const cookieBox = document.getElementsByClassName('wrapper')[0]
-    if(cookie == "cookiesAtivado"){
-        cookieBox.classList.add("hide")
-    }else{
-        cookieBox.classList.remove("hide")
+setTimeout( () => {
+    if(!localStorage.getItem("cookiesAccepted")){
+        cookieContainer.classList.add("active")
     }
-}
+}, 1)
+

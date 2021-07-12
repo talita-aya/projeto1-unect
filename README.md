@@ -13,4 +13,4 @@ projeto sendo desenvolvido durante o processo de trainee
  - [x] ~~Barra para solicitar permissão de cookies~~
  - [x] ~~Armazenar configurações em cookies~~ 
  - [ ]  Armazenar tarefas em cookies
-  > **Note:** foi utilizado local storage em alguns momentos
+  > **OBS:** foi utilizado local storage em alguns momentos

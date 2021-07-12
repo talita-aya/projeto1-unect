@@ -1,2 +1,2 @@
-# projeto1-unect
-projeto sendo desenvolvido durante o processo de trainee na Unect Jr.
+# projeto 1 - Unect Jr.
+projeto sendo desenvolvido durante o processo de trainee

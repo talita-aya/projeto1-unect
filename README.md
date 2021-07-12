@@ -1,7 +1,7 @@
 # projeto 1 - Unect Jr.
 projeto sendo desenvolvido durante o processo de trainee
 
-***Funcionalidades:*** 
+***Funcionalidades:***
  - [x] ~~Adição de tarefas~~
  - [x] ~~Mover tarefas entre quadros (de acordo com o fluxo descrito)~~  
  - [x] ~~Excluir tarefas a qualquer momento~~
